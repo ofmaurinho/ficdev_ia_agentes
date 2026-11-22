@@ -1,0 +1,54 @@
+{
+  "status": "verificado",
+  "escopo": "Bancos SQLite temporarios do experimento live; contagens agregadas, sem identificadores nem conteudo.",
+  "bancos": [
+    {
+      "banco_experimento": "historico_limitado",
+      "exclusao_alvo_sucesso": true,
+      "residuos_alvo": false,
+      "erros": 0,
+      "tabelas_inspecionadas": [
+        "agno_runs",
+        "agno_schema_versions",
+        "agno_sessions"
+      ],
+      "linhas_agregadas_antes": {
+        "agno_runs": 3,
+        "agno_schema_versions": 4,
+        "agno_sessions": 3
+      },
+      "linhas_agregadas_depois": {
+        "agno_runs": 1,
+        "agno_schema_versions": 4,
+        "agno_sessions": 1
+      },
+      "arquivo_temporario_removido": true
+    },
+    {
+      "banco_experimento": "historico_e_memoria_usuario",
+      "exclusao_alvo_sucesso": true,
+      "residuos_alvo": false,
+      "erros": 0,
+      "tabelas_inspecionadas": [
+        "agno_memories",
+        "agno_runs",
+        "agno_schema_versions",
+        "agno_sessions"
+      ],
+      "linhas_agregadas_antes": {
+        "agno_memories": 2,
+        "agno_runs": 3,
+        "agno_schema_versions": 6,
+        "agno_sessions": 3
+      },
+      "linhas_agregadas_depois": {
+        "agno_memories": 1,
+        "agno_runs": 1,
+        "agno_schema_versions": 6,
+        "agno_sessions": 1
+      },
+      "arquivo_temporario_removido": true
+    }
+  ],
+  "sucesso": true
+}

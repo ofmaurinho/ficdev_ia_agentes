@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite
+*.sqlite3
+memoria_diarias.sqlite-shm
+memoria_diarias.sqlite-wal
+.pytest_cache/
+resultados/conferencias.jsonl

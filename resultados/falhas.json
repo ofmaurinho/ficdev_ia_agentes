@@ -1,0 +1,46 @@
+{
+  "tipo": "falhas_controladas_e_observadas",
+  "integracao_agno": {
+    "framework": "Agno Agent.run + OpenAIChat",
+    "escopo": "execucao local com metodo do modelo stubado; sem chamada a endpoint externo",
+    "execucoes": [
+      {
+        "falha": "nao_convergencia_ferramentas",
+        "mecanismo": "modelo stub continua solicitando uma ferramenta no ciclo real Agent.run ate o tool_call_limit configurado; retorna terminal depois do teto",
+        "resultado": "numero de invocacoes executadas igual ao teto configurado; nao ocorre loop de ferramentas sem limite",
+        "evidencia": "testes/test_falhas.py::test_laco_sem_convergencia_tem_teto_no_agno"
+      },
+      {
+        "falha": "erro_de_provedor",
+        "mecanismo": "OpenAIChat.invoke controlado levanta ModelProviderError dentro do Agent.run",
+        "resultado": "RunStatus.error; exigir_execucao_concluida recusa e nao expoe o conteudo tecnico na excecao da aplicacao",
+        "evidencia": "testes/test_falhas.py::test_erro_api_controlado_passando_pelo_agno"
+      }
+    ]
+  },
+  "benchmark_live": {
+    "execucoes": 84,
+    "saidas_de_modelo": 78,
+    "acertos_exatos": 78,
+    "recusas_de_saida": 0,
+    "bloqueios_legitimos_pre_modelo": 6,
+    "nota": "o benchmark final nao registrou recusas de sintese nem erros de execucao; os seis bloqueios foram identidade divergente no preflight. Falha HTTP real nao foi provocada."
+  },
+  "outras_falhas": [
+    {
+      "falha": "argumento_inventado",
+      "escopo": "teste local de barreira; sem consulta autorizada nem saida liberada",
+      "evidencia": "testes/test_falhas.py::test_argumento_de_data_inventado_recusado"
+    },
+    {
+      "falha": "erro_de_acervo",
+      "escopo": "consulta local controlada; nao converte em aprovacao",
+      "evidencia": "testes/test_falhas.py::test_erro_controlado_nao_e_resultado_valido"
+    },
+    {
+      "falha": "injecao_e_urgencia_nao_validada",
+      "escopo": "caso do acervo e teste local; alerta preservado e regra de urgencia restrita",
+      "evidencia": "testes/test_ferramentas.py::test_urgencia_e_injecao"
+    }
+  ]
+}

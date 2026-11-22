@@ -1,0 +1,81 @@
+{
+  "status": "concluido",
+  "execucoes_totais": 84,
+  "rodadas_por_modo": 3,
+  "criterio": "Saida efetivamente proposta pelo modelo, aceita somente apos barreiras; bloqueios pre-modelo separados.",
+  "modos": {
+    "false": {
+      "execucoes": 42,
+      "chamadas_ao_modelo_avaliadas": 39,
+      "bloqueios_antes_do_modelo": 3,
+      "saidas_modelo_aceitas": 17,
+      "acertos_exatos_gabarito": 17,
+      "acuracia_modelo": 0.4358974358974359,
+      "recusas_ou_erros_modelo": 22,
+      "categorias_recusa": {
+        "tópicos de pendência/alerta divergentes": 8,
+        "campo divergente: recomendacao": 2,
+        "número não ancorado: antecedencia": 2,
+        "situação divergente: limite_mensal": 3,
+        "situação divergente: prestacao_contas": 3,
+        "ordem das ferramentas violou dependências": 1,
+        "situação divergente: antecedencia": 1,
+        "campo divergente: exige_autorizacao_superior": 2
+      },
+      "tokens_entrada_mediana": 2035,
+      "tokens_saida_mediana": 415,
+      "tokens_totais_mediana": 2450,
+      "tokens_totais_maximo": 11840,
+      "custo_mediano_usd": 0.0009056,
+      "custo_maximo_usd": 0.002975,
+      "razao_maximo_mediana_custo": 3.2851148409893995,
+      "latencia_mediana_s": 3.493959999992512,
+      "latencia_maxima_s": 8.635285299998941,
+      "chamadas_modelo_mediana": 1,
+      "chamadas_modelo_maxima": 5,
+      "distribuicao_chamadas_ferramenta_pedidas_pelo_modelo": {
+        "0": 41,
+        "4": 1
+      }
+    },
+    "true": {
+      "execucoes": 42,
+      "chamadas_ao_modelo_avaliadas": 39,
+      "bloqueios_antes_do_modelo": 3,
+      "saidas_modelo_aceitas": 20,
+      "acertos_exatos_gabarito": 20,
+      "acuracia_modelo": 0.5128205128205128,
+      "recusas_ou_erros_modelo": 19,
+      "categorias_recusa": {
+        "tópicos de pendência/alerta divergentes": 7,
+        "número não ancorado: antecedencia": 3,
+        "campo divergente: recomendacao": 1,
+        "situação divergente: limite_mensal": 4,
+        "situação divergente: prestacao_contas": 1,
+        "situação divergente: antecedencia": 1,
+        "campo divergente: exige_autorizacao_superior": 1,
+        "ordem das ferramentas violou dependências": 1
+      },
+      "tokens_entrada_mediana": 2035,
+      "tokens_saida_mediana": 414,
+      "tokens_totais_mediana": 2446,
+      "tokens_totais_maximo": 17993,
+      "custo_mediano_usd": 0.0008998000000000001,
+      "custo_maximo_usd": 0.0044026000000000004,
+      "razao_maximo_mediana_custo": 4.892865081129139,
+      "latencia_mediana_s": 3.4641694000019925,
+      "latencia_maxima_s": 11.378022700009751,
+      "chamadas_modelo_mediana": 1,
+      "chamadas_modelo_maxima": 7,
+      "distribuicao_chamadas_ferramenta_pedidas_pelo_modelo": {
+        "0": 41,
+        "6": 1
+      }
+    }
+  },
+  "decisao_operacional": {
+    "parallel_tool_calls": false,
+    "motivo": "Consultas de negocio sequenciais no orquestrador; sem ganho consistente; menor custo e latencia maximos observados desligado."
+  },
+  "nota": "Custos sao estimativas por precos de referencia do exercicio sobre tokens reportados; nao sao cobranca confirmada."
+}

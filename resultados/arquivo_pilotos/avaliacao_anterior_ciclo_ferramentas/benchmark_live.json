@@ -1,0 +1,5517 @@
+{
+  "tipo": "agente_live",
+  "criterio": "comparação da saída efetivamente retornada, com origem e avaliação independente do modelo",
+  "rows": [
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 351,
+      "tokens_total": 2377,
+      "custo_usd": 0.0008264000000000001,
+      "duracao_segundos": 3.106454399996437,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 372,
+      "tokens_total": 2413,
+      "custo_usd": 0.0008546000000000001,
+      "duracao_segundos": 3.370974899997236,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 384,
+      "tokens_total": 2407,
+      "custo_usd": 0.0008654,
+      "duracao_segundos": 2.938514000008581,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 386,
+      "tokens_total": 2440,
+      "custo_usd": 0.000874,
+      "duracao_segundos": 2.9802774999989197,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2025,
+      "tokens_saida": 395,
+      "tokens_total": 2420,
+      "custo_usd": 0.000879,
+      "duracao_segundos": 3.118781500001205,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: recomendacao",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2037,
+      "tokens_saida": 512,
+      "tokens_total": 2549,
+      "custo_usd": 0.0010218,
+      "duracao_segundos": 4.085480599998846,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "número não ancorado: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 589,
+      "tokens_total": 2662,
+      "custo_usd": 0.0011214,
+      "duracao_segundos": 4.408376800012775,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 427,
+      "tokens_total": 2462,
+      "custo_usd": 0.0009194,
+      "duracao_segundos": 3.6066875999968033,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 453,
+      "tokens_total": 2467,
+      "custo_usd": 0.0009464000000000001,
+      "duracao_segundos": 3.487945299988496,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 419,
+      "tokens_total": 2448,
+      "custo_usd": 0.0009085999999999999,
+      "duracao_segundos": 3.493959999992512,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: prestacao_contas",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 413,
+      "tokens_total": 2314,
+      "custo_usd": 0.0008757999999999999,
+      "duracao_segundos": 3.5432375999953365,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 1,
+      "paralelo": false,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.001082899994798936,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 391,
+      "tokens_total": 2432,
+      "custo_usd": 0.0008774000000000001,
+      "duracao_segundos": 3.5065940000058617,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 1,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 415,
+      "tokens_total": 2453,
+      "custo_usd": 0.0009056,
+      "duracao_segundos": 3.63550769998983,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 369,
+      "tokens_total": 2395,
+      "custo_usd": 0.000848,
+      "duracao_segundos": 3.0599825999961467,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 415,
+      "tokens_total": 2456,
+      "custo_usd": 0.0009062,
+      "duracao_segundos": 3.179540899989661,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 363,
+      "tokens_total": 2386,
+      "custo_usd": 0.0008402,
+      "duracao_segundos": 2.833643199992366,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 396,
+      "tokens_total": 2450,
+      "custo_usd": 0.000886,
+      "duracao_segundos": 3.31478070000594,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          },
+          "resultado": "cache_validado"
+        }
+      ],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "ordem das ferramentas violou dependências",
+      "chamadas_modelo": 5,
+      "turnos_assistente": 5,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 11233,
+      "tokens_saida": 607,
+      "tokens_total": 11840,
+      "custo_usd": 0.002975,
+      "duracao_segundos": 8.635285299998941,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2037,
+      "tokens_saida": 532,
+      "tokens_total": 2569,
+      "custo_usd": 0.0010458,
+      "duracao_segundos": 4.205606200004695,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: exige_autorizacao_superior",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 463,
+      "tokens_total": 2536,
+      "custo_usd": 0.0009702000000000001,
+      "duracao_segundos": 3.816271700008656,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 444,
+      "tokens_total": 2479,
+      "custo_usd": 0.0009398,
+      "duracao_segundos": 3.770160800006124,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 451,
+      "tokens_total": 2465,
+      "custo_usd": 0.000944,
+      "duracao_segundos": 3.567070799996145,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 452,
+      "tokens_total": 2481,
+      "custo_usd": 0.0009482000000000001,
+      "duracao_segundos": 3.589009500006796,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: prestacao_contas",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 423,
+      "tokens_total": 2324,
+      "custo_usd": 0.0008878,
+      "duracao_segundos": 3.5787278000061633,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.0022293999936664477,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 2,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 432,
+      "tokens_total": 2473,
+      "custo_usd": 0.0009266,
+      "duracao_segundos": 3.461173099989537,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 2,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 387,
+      "tokens_total": 2425,
+      "custo_usd": 0.000872,
+      "duracao_segundos": 3.2558195000019623,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 353,
+      "tokens_total": 2379,
+      "custo_usd": 0.0008288,
+      "duracao_segundos": 2.8813650000083726,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 387,
+      "tokens_total": 2428,
+      "custo_usd": 0.0008726000000000001,
+      "duracao_segundos": 3.1246176999993622,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 362,
+      "tokens_total": 2385,
+      "custo_usd": 0.000839,
+      "duracao_segundos": 3.167583700007526,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 376,
+      "tokens_total": 2430,
+      "custo_usd": 0.000862,
+      "duracao_segundos": 3.4331005999993067,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "número não ancorado: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2025,
+      "tokens_saida": 456,
+      "tokens_total": 2481,
+      "custo_usd": 0.0009521999999999999,
+      "duracao_segundos": 3.6352098000061233,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: recomendacao",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2037,
+      "tokens_saida": 496,
+      "tokens_total": 2533,
+      "custo_usd": 0.0010026,
+      "duracao_segundos": 4.0204803999949945,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: exige_autorizacao_superior",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 528,
+      "tokens_total": 2601,
+      "custo_usd": 0.0010482,
+      "duracao_segundos": 4.266284299999825,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 435,
+      "tokens_total": 2470,
+      "custo_usd": 0.000929,
+      "duracao_segundos": 3.8053941000107443,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 466,
+      "tokens_total": 2480,
+      "custo_usd": 0.000962,
+      "duracao_segundos": 3.632250099995872,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 412,
+      "tokens_total": 2441,
+      "custo_usd": 0.0009002000000000001,
+      "duracao_segundos": 3.3228412000025855,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: prestacao_contas",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 452,
+      "tokens_total": 2353,
+      "custo_usd": 0.0009226,
+      "duracao_segundos": 3.9378343999997014,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 3,
+      "paralelo": false,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.0009404000011272728,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 411,
+      "tokens_total": 2452,
+      "custo_usd": 0.0009014000000000001,
+      "duracao_segundos": 3.433651399987866,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 3,
+      "paralelo": false,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 386,
+      "tokens_total": 2424,
+      "custo_usd": 0.0008707999999999999,
+      "duracao_segundos": 3.2115731999947457,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 345,
+      "tokens_total": 2371,
+      "custo_usd": 0.0008192000000000001,
+      "duracao_segundos": 2.9673227000021143,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 405,
+      "tokens_total": 2446,
+      "custo_usd": 0.0008942,
+      "duracao_segundos": 3.0768741999927443,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 394,
+      "tokens_total": 2417,
+      "custo_usd": 0.0008774,
+      "duracao_segundos": 3.024465800001053,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 356,
+      "tokens_total": 2410,
+      "custo_usd": 0.000838,
+      "duracao_segundos": 2.9996971000073245,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "número não ancorado: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2025,
+      "tokens_saida": 462,
+      "tokens_total": 2487,
+      "custo_usd": 0.0009594,
+      "duracao_segundos": 3.6367433999985224,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: recomendacao",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2037,
+      "tokens_saida": 520,
+      "tokens_total": 2557,
+      "custo_usd": 0.0010314,
+      "duracao_segundos": 4.072151699991082,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 611,
+      "tokens_total": 2684,
+      "custo_usd": 0.0011478,
+      "duracao_segundos": 4.543148299999302,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 425,
+      "tokens_total": 2460,
+      "custo_usd": 0.000917,
+      "duracao_segundos": 3.769668199995067,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 406,
+      "tokens_total": 2420,
+      "custo_usd": 0.00089,
+      "duracao_segundos": 3.446880500006955,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 441,
+      "tokens_total": 2470,
+      "custo_usd": 0.000935,
+      "duracao_segundos": 3.582701299994369,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 1,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: prestacao_contas",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 479,
+      "tokens_total": 2380,
+      "custo_usd": 0.000955,
+      "duracao_segundos": 4.225345600003493,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.0008560999995097518,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 382,
+      "tokens_total": 2423,
+      "custo_usd": 0.0008666,
+      "duracao_segundos": 3.545413500003633,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 1,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 382,
+      "tokens_total": 2420,
+      "custo_usd": 0.000866,
+      "duracao_segundos": 3.1800281000032555,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 385,
+      "tokens_total": 2411,
+      "custo_usd": 0.0008672,
+      "duracao_segundos": 3.785014900000533,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 407,
+      "tokens_total": 2448,
+      "custo_usd": 0.0008966,
+      "duracao_segundos": 3.3633477999974275,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 393,
+      "tokens_total": 2416,
+      "custo_usd": 0.0008762,
+      "duracao_segundos": 3.3803104999969946,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 359,
+      "tokens_total": 2413,
+      "custo_usd": 0.0008416000000000001,
+      "duracao_segundos": 2.8703586000046926,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2025,
+      "tokens_saida": 453,
+      "tokens_total": 2478,
+      "custo_usd": 0.0009486000000000001,
+      "duracao_segundos": 3.853566999998293,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2037,
+      "tokens_saida": 491,
+      "tokens_total": 2528,
+      "custo_usd": 0.0009965999999999998,
+      "duracao_segundos": 3.883694399992237,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "campo divergente: exige_autorizacao_superior",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 497,
+      "tokens_total": 2570,
+      "custo_usd": 0.001011,
+      "duracao_segundos": 3.9152949999988778,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 440,
+      "tokens_total": 2475,
+      "custo_usd": 0.000935,
+      "duracao_segundos": 3.739746599996579,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 466,
+      "tokens_total": 2480,
+      "custo_usd": 0.000962,
+      "duracao_segundos": 3.690579499991145,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 443,
+      "tokens_total": 2472,
+      "custo_usd": 0.0009374000000000001,
+      "duracao_segundos": 3.7179637999943225,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 433,
+      "tokens_total": 2334,
+      "custo_usd": 0.0008998000000000001,
+      "duracao_segundos": 3.748836900005699,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.0008440999954473227,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 2,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 422,
+      "tokens_total": 2463,
+      "custo_usd": 0.0009146,
+      "duracao_segundos": 3.2241413000010652,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 2,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 383,
+      "tokens_total": 2421,
+      "custo_usd": 0.0008672,
+      "duracao_segundos": 3.3337824000045657,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0101",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2c012f73b6bb"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2c012f73b6bb",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2026,
+      "tokens_saida": 391,
+      "tokens_total": 2417,
+      "custo_usd": 0.0008744000000000001,
+      "duracao_segundos": 3.212401200013119,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0102",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad35c7695804"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad35c7695804",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-09",
+            "data_retorno": "2026-11-12"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 414,
+      "tokens_total": 2455,
+      "custo_usd": 0.000905,
+      "duracao_segundos": 3.379062399995746,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0103",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "ad91da919f01"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "ad91da919f01",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-05",
+            "data_retorno": "2026-11-05"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 140.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2023,
+      "tokens_saida": 376,
+      "tokens_total": 2399,
+      "custo_usd": 0.0008558,
+      "duracao_segundos": 3.4641694000019925,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0104",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "002cdc376350"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "002cdc376350",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "A",
+            "destino": "DF",
+            "data_saida": "2026-11-16",
+            "data_retorno": "2026-11-18"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "GAB",
+            "valor": 1500.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2054,
+      "tokens_saida": 378,
+      "tokens_total": 2432,
+      "custo_usd": 0.0008644,
+      "duracao_segundos": 2.954578200005926,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0105",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6de7f7e0a377"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6de7f7e0a377",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-13",
+            "data_retorno": "2026-10-15"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 700.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "número não ancorado: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2025,
+      "tokens_saida": 448,
+      "tokens_total": 2473,
+      "custo_usd": 0.0009426,
+      "duracao_segundos": 3.895857600000454,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0106",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "db50937ddf50",
+            "mes_referencia": "2026-10"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 1260.0
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-10-10",
+            "data_retorno": "2026-10-14"
+          },
+          "resultado": "cache_validado"
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "db50937ddf50"
+          },
+          "resultado": "cache_validado"
+        }
+      ],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "ordem das ferramentas violou dependências",
+      "chamadas_modelo": 7,
+      "turnos_assistente": 7,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 17189,
+      "tokens_saida": 804,
+      "tokens_total": 17993,
+      "custo_usd": 0.0044026000000000004,
+      "duracao_segundos": 11.378022700009751,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0107",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "2e445d2a1a2c",
+            "mes_referencia": "2026-10"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-10-12",
+            "data_retorno": "2026-10-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFA",
+            "valor": 550.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "número não ancorado: antecedencia",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2073,
+      "tokens_saida": 577,
+      "tokens_total": 2650,
+      "custo_usd": 0.001107,
+      "duracao_segundos": 4.400894099992001,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0108",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "f3871f91e5c4"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "f3871f91e5c4",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-03",
+            "data_retorno": "2026-11-06"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2035,
+      "tokens_saida": 402,
+      "tokens_total": 2437,
+      "custo_usd": 0.0008893999999999999,
+      "duracao_segundos": 3.360233100000187,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0109",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c7e80f134d2f"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c7e80f134d2f",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-23",
+            "data_retorno": "2026-11-26"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "URS",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2014,
+      "tokens_saida": 469,
+      "tokens_total": 2483,
+      "custo_usd": 0.0009655999999999999,
+      "duracao_segundos": 3.7090960999921663,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0110",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "nao_recomendado",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "6c9e77d60e12"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "6c9e77d60e12",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "RO",
+            "data_saida": "2026-11-10",
+            "data_retorno": "2026-11-14"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CRH",
+            "valor": 1800.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2029,
+      "tokens_saida": 427,
+      "tokens_total": 2456,
+      "custo_usd": 0.0009182000000000001,
+      "duracao_segundos": 3.240161599998828,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "situação divergente: limite_mensal",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 1901,
+      "tokens_saida": 409,
+      "tokens_total": 2310,
+      "custo_usd": 0.000871,
+      "duracao_segundos": 3.1863094000000274,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "diligencia",
+      "acerto_integral": true,
+      "acerto_agente": null,
+      "origem_saida": "barreira_pre_modelo",
+      "agente_avaliado": false,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": true,
+      "chamadas_modelo": null,
+      "turnos_assistente": null,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": null,
+      "tokens_saida": null,
+      "tokens_total": null,
+      "custo_usd": null,
+      "duracao_segundos": 0.0014018000074429438,
+      "status": "diligencia_identidade_sem_modelo",
+      "modelo_usado": false,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0111",
+      "rodada": 3,
+      "paralelo": true,
+      "recomendacao": "apto_para_autorizacao",
+      "acerto_integral": true,
+      "acerto_agente": true,
+      "origem_saida": "modelo_validado",
+      "agente_avaliado": true,
+      "acertos_parciais": 6,
+      "campos_gabarito": {
+        "recomendacao": true,
+        "quantidade_diarias": true,
+        "valor_total": true,
+        "exige_autorizacao_superior": true,
+        "seis_verificacoes": true,
+        "argumentos_sem_invencao": true
+      },
+      "verificacoes": {
+        "cadastro": true,
+        "dados_completos": true,
+        "antecedencia": true,
+        "prestacao_contas": true,
+        "limite_mensal": true,
+        "saldo_orcamentario": true
+      },
+      "argumentos_sem_invencao": true,
+      "ferramentas_corretas": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "36f38bbeb19e"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "36f38bbeb19e",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "B",
+            "destino": "MT",
+            "data_saida": "2026-11-17",
+            "data_retorno": "2026-11-20"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CFF",
+            "valor": 980.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "barreiras_acionadas": [
+        "argumentos",
+        "ancoragem_numerica",
+        "minimizacao_pii"
+      ],
+      "ocorreu_diligencia": false,
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2041,
+      "tokens_saida": 384,
+      "tokens_total": 2425,
+      "custo_usd": 0.000869,
+      "duracao_segundos": 3.0977213000005577,
+      "status": "RunStatus.completed",
+      "modelo_usado": true,
+      "erro": null
+    },
+    {
+      "pedido": "DIA-2026-0112",
+      "rodada": 3,
+      "paralelo": true,
+      "acerto_integral": false,
+      "acertos_parciais": 0,
+      "acerto_agente": false,
+      "origem_saida": "erro_execucao",
+      "agente_avaliado": true,
+      "tentativa_agente": true,
+      "ferramentas": [
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "e10df68a4bab"
+          }
+        },
+        {
+          "nome": "consultar_cadastro_servidor",
+          "argumentos": {
+            "matricula": "c0dda3c625c0"
+          }
+        },
+        {
+          "nome": "consultar_historico_diarias",
+          "argumentos": {
+            "matricula": "c0dda3c625c0",
+            "mes_referencia": "2026-11"
+          }
+        },
+        {
+          "nome": "calcular_diarias",
+          "argumentos": {
+            "grupo": "C",
+            "destino": "MT",
+            "data_saida": "2026-11-24",
+            "data_retorno": "2026-11-27"
+          }
+        },
+        {
+          "nome": "consultar_saldo_diarias",
+          "argumentos": {
+            "unidade": "CUC",
+            "valor": 770.0
+          }
+        }
+      ],
+      "chamadas_ferramenta_adicionais_modelo": [],
+      "erro": "RecusaSeguranca",
+      "recusa_barreira": "tópicos de pendência/alerta divergentes",
+      "chamadas_modelo": 1,
+      "turnos_assistente": 1,
+      "estagios_modelo_auxiliares_identificados": [],
+      "tokens_entrada": 2038,
+      "tokens_saida": 392,
+      "tokens_total": 2430,
+      "custo_usd": 0.000878,
+      "duracao_segundos": 3.2914773000084097,
+      "status": "RunStatus.completed",
+      "modelo_usado": true
+    }
+  ],
+  "resumo": {
+    "n_execucoes": 84,
+    "n_metricas_custo": 78,
+    "custo_mediano_usd": 0.0009032,
+    "custo_maximo_usd": 0.0044026000000000004,
+    "razao_maximo_mediana": 4.874446412754651,
+    "tempo_mediano_s": 3.454026799998246,
+    "tempo_maximo_s": 11.378022700009751,
+    "tokens_medianos": 2448.0,
+    "tokens_maximos": 17993.0,
+    "n_agente_avaliado": 78,
+    "acertos_agente": 37,
+    "bloqueios_pre_modelo": 6,
+    "erros_execucao": 41
+  }
+}

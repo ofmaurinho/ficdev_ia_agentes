@@ -1,0 +1,61 @@
+{
+  "tipo": "limpeza_live_bancos_temporarios_do_experimento_memoria",
+  "bancos": [
+    {
+      "banco": "historico_limitado",
+      "sucesso": true,
+      "residuos": false,
+      "erros": 0,
+      "tabelas_inspecionadas": [
+        "agno_runs",
+        "agno_schema_versions",
+        "agno_sessions"
+      ],
+      "linhas_antes": {
+        "agno_runs": 4,
+        "agno_schema_versions": 4,
+        "agno_sessions": 3
+      },
+      "linhas_depois": {
+        "agno_runs": 1,
+        "agno_schema_versions": 4,
+        "agno_sessions": 1
+      }
+    },
+    {
+      "banco": "historico_e_memoria_usuario",
+      "sucesso": true,
+      "residuos": false,
+      "erros": 0,
+      "tabelas_inspecionadas": [
+        "agno_runs",
+        "agno_schema_versions",
+        "agno_sessions"
+      ],
+      "linhas_antes": {
+        "agno_runs": 4,
+        "agno_schema_versions": 4,
+        "agno_sessions": 3
+      },
+      "linhas_depois": {
+        "agno_runs": 1,
+        "agno_schema_versions": 4,
+        "agno_sessions": 1
+      }
+    }
+  ],
+  "resultado": "Limpeza verificada para os bancos SQLite tempor\u00e1rios do experimento; o arquivo de confer\u00eancias \u00e9 reposit\u00f3rio separado e permanece fora desse escopo.",
+  "status_global": "sqlite_verificado_conferencia_pendente_politica_institucional",
+  "conferencia_humana": {
+    "arquivo": "resultados/conferencias.jsonl",
+    "existe": true,
+    "reposit\u00f3rio": "JSONL local separado do SQLite do agente",
+    "prazo_de_guarda": "pendente de decis\u00e3o institucional",
+    "procedimento_de_exclusao": "n\u00e3o definido nem executado; depende de pol\u00edtica institucional aprovada",
+    "inspecao_de_conteudo": "n\u00e3o realizada nesta checagem para evitar leitura e exposi\u00e7\u00e3o de registros pessoais; somente metadados do arquivo conferidos",
+    "evidencia_de_escopo": "testes/test_memoria.py::test_eliminacao_sqlite_nao_altera_registro_jsonl_separado",
+    "status": "pendente_de_politica_institucional",
+    "registro_pendencia": "resultados/pendencia_politica_conferencias.md",
+    "uso_com_dados_reais": "bloqueado_ate_decisao_institucional"
+  }
+}

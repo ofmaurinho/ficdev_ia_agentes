@@ -1,0 +1,103 @@
+{
+  "status": "concluido",
+  "tipo": "recalibracao_com_validacao_por_pedidos_separados",
+  "arquivo_fonte": "resultados/benchmark_live_calibracao.json",
+  "data_execucao": "2026-11-22",
+  "unidade": "tokens de entrada cobrados somados em todas as chamadas de modelo de uma execu\u00e7\u00e3o",
+  "metodologia": "Seis pedidos calibram a mediana de tokens por posicao da chamada; a soma forma a estimativa. Seis pedidos distintos validam contra a mediana da entrada total. Cada chamada posterior conta seu input_tokens cobrado completo, incluindo instrucoes, esquemas, historico e resultados reenviados; nao e delta entre contagens.",
+  "precificacao_usd_por_milhao": {
+    "entrada": 0.2,
+    "saida": 1.2
+  },
+  "modos": {
+    "sequencial": {
+      "chamadas_por_execucao": 5,
+      "n_calibracao": 6,
+      "pedidos_calibracao": [
+        "DIA-2026-0101",
+        "DIA-2026-0102",
+        "DIA-2026-0103",
+        "DIA-2026-0104",
+        "DIA-2026-0105",
+        "DIA-2026-0106"
+      ],
+      "tokens_entrada_mediana_por_chamada_calibracao": [
+        2613.0,
+        2707.5,
+        2825.0,
+        2952.5,
+        3046.5
+      ],
+      "tokens_saida_mediana_por_chamada_calibracao": [
+        24.0,
+        33.0,
+        46.0,
+        29.0,
+        378.0
+      ],
+      "estimativa_tokens_entrada": 14144.5,
+      "estimativa_tokens_saida": 510.0,
+      "estimativa_custo_total_usd": 0.0034409,
+      "n_validacao": 6,
+      "pedidos_validacao": [
+        "DIA-2026-0107",
+        "DIA-2026-0108",
+        "DIA-2026-0109",
+        "DIA-2026-0110",
+        "DIA-2026-0111",
+        "DIA-2026-0112"
+      ],
+      "mediana_tokens_entrada_validacao": 14161.0,
+      "mediana_tokens_saida_validacao": 511.5,
+      "mediana_custo_total_validacao_usd": 0.0034469,
+      "erro_absoluto_tokens_entrada_pct": 0.11651719511333945,
+      "erro_absoluto_custo_pct": 0.17406945371202903,
+      "projecao_300_execucoes_usd": 1.03407,
+      "soma_metricas_por_chamada_confere_com_total": true
+    },
+    "paralelo": {
+      "chamadas_por_execucao": 4,
+      "n_calibracao": 6,
+      "pedidos_calibracao": [
+        "DIA-2026-0101",
+        "DIA-2026-0102",
+        "DIA-2026-0103",
+        "DIA-2026-0104",
+        "DIA-2026-0105",
+        "DIA-2026-0106"
+      ],
+      "tokens_entrada_mediana_por_chamada_calibracao": [
+        2613.0,
+        2707.5,
+        2952.5,
+        3046.5
+      ],
+      "tokens_saida_mediana_por_chamada_calibracao": [
+        24.0,
+        92.0,
+        29.0,
+        371.0
+      ],
+      "estimativa_tokens_entrada": 11319.5,
+      "estimativa_tokens_saida": 516.0,
+      "estimativa_custo_total_usd": 0.0028831,
+      "n_validacao": 6,
+      "pedidos_validacao": [
+        "DIA-2026-0107",
+        "DIA-2026-0108",
+        "DIA-2026-0109",
+        "DIA-2026-0110",
+        "DIA-2026-0111",
+        "DIA-2026-0112"
+      ],
+      "mediana_tokens_entrada_validacao": 11334.5,
+      "mediana_tokens_saida_validacao": 525.5,
+      "mediana_custo_total_validacao_usd": 0.0029011,
+      "erro_absoluto_tokens_entrada_pct": 0.13233931801138119,
+      "erro_absoluto_custo_pct": 0.6204543104339809,
+      "projecao_300_execucoes_usd": 0.87033,
+      "soma_metricas_por_chamada_confere_com_total": true
+    }
+  },
+  "nota": "Uma unica rodada por pedido. Projecao mensal e hipotese, nao fatura. A estimativa didatica previa nao foi calibrada; esta estimativa usa outros pedidos na validacao."
+}

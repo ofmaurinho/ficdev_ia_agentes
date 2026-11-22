@@ -1,0 +1,119 @@
+{
+  "status": "executado_live_sem_resposta_esperada_no_prompt",
+  "configs": [
+    {
+      "caso": "5da2e5d244b6",
+      "configuracao": "sem_memoria",
+      "primeiro_turno_custo_usd": null,
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "complementacao_custo_usd": null,
+      "complementacao_tokens_entrada": null,
+      "complementacao_tokens_saida": null,
+      "recuperou_caso": false,
+      "aplicou_complementacao": false,
+      "erro": "RecusaSeguranca",
+      "barreira_sanitizada": "situação divergente: prestacao_contas",
+      "etapa": "primeiro_turno",
+      "status": "falha_segura"
+    },
+    {
+      "caso": "76d33fa2726a",
+      "configuracao": "sem_memoria",
+      "primeiro_turno_custo_usd": null,
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "complementacao_custo_usd": null,
+      "complementacao_tokens_entrada": null,
+      "complementacao_tokens_saida": null,
+      "recuperou_caso": false,
+      "aplicou_complementacao": false,
+      "erro": "RecusaSeguranca",
+      "barreira_sanitizada": "tópicos de pendência/alerta divergentes",
+      "etapa": "complemento_com_identidade_corrigida",
+      "status": "falha_segura"
+    },
+    {
+      "caso": "5da2e5d244b6",
+      "configuracao": "historico_limitado",
+      "primeiro_turno_custo_usd": null,
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "complementacao_custo_usd": null,
+      "complementacao_tokens_entrada": null,
+      "complementacao_tokens_saida": null,
+      "recuperou_caso": false,
+      "aplicou_complementacao": false,
+      "erro": "RecusaSeguranca",
+      "barreira_sanitizada": "situação divergente: prestacao_contas",
+      "etapa": "primeiro_turno",
+      "status": "falha_segura"
+    },
+    {
+      "caso": "76d33fa2726a",
+      "configuracao": "historico_limitado",
+      "primeiro_turno_custo_usd": null,
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "complementacao_custo_usd": null,
+      "complementacao_tokens_entrada": null,
+      "complementacao_tokens_saida": null,
+      "recuperou_caso": false,
+      "aplicou_complementacao": false,
+      "erro": "RecusaSeguranca",
+      "barreira_sanitizada": "tópicos de pendência/alerta divergentes",
+      "etapa": "complemento_com_identidade_corrigida",
+      "status": "falha_segura"
+    },
+    {
+      "caso": "5da2e5d244b6",
+      "configuracao": "historico_e_memoria_usuario",
+      "primeiro_turno_custo_usd": null,
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "complementacao_custo_usd": null,
+      "complementacao_tokens_entrada": null,
+      "complementacao_tokens_saida": null,
+      "recuperou_caso": false,
+      "aplicou_complementacao": false,
+      "erro": "RecusaSeguranca",
+      "barreira_sanitizada": "situação divergente: prestacao_contas",
+      "etapa": "primeiro_turno",
+      "status": "falha_segura"
+    },
+    {
+      "caso": "76d33fa2726a",
+      "configuracao": "historico_e_memoria_usuario",
+      "etapa_complementacao": "complemento_com_identidade_corrigida",
+      "primeiro_turno_tokens_entrada": null,
+      "primeiro_turno_tokens_saida": null,
+      "primeiro_turno_chamadas_modelo": null,
+      "primeiro_turno_custo_usd": null,
+      "complementacao_tokens_entrada": 3569,
+      "complementacao_tokens_saida": 405,
+      "complementacao_chamadas_modelo": 2,
+      "complementacao_custo_usd": 0.0011998000000000002,
+      "custo_total_usd": null,
+      "recuperou_caso": true,
+      "aplicou_complementacao": true,
+      "modelo_usado_no_segundo_turno": true,
+      "session_id_mascarado": "76d33fa2726a",
+      "user_id_mascarado": "c0dda3c625c0",
+      "status": "medido"
+    }
+  ],
+  "limpeza_bancos": [
+    {
+      "banco": "historico_limitado",
+      "sucesso": true,
+      "residuos": false,
+      "erros": 0
+    },
+    {
+      "banco": "historico_e_memoria_usuario",
+      "sucesso": true,
+      "residuos": false,
+      "erros": 0
+    }
+  ]
+}

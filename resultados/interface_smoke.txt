@@ -1,0 +1,1 @@
+Streamlit AppTest: renderiza??o inicial e fluxo de erro aprovados; limpa resultado anterior; registra minuta editada com PII mascarada. Sem captura automatizada de navegador.

@@ -1,0 +1,29 @@
+{
+  "escopo": "bancos temporarios do experimento live; somente contagens agregadas",
+  "bancos": [
+    {
+      "banco_experimento": "memoria_historico_limitado",
+      "exclusoes_sucesso": true,
+      "residuos_dos_casos": false,
+      "contagens_finais": {
+        "agno_sessions": 0,
+        "agno_schema_versions": 2,
+        "agno_runs": 0
+      },
+      "arquivo_temporario_removido": true
+    },
+    {
+      "banco_experimento": "memoria_historico_e_memoria_usuario",
+      "exclusoes_sucesso": true,
+      "residuos_dos_casos": false,
+      "contagens_finais": {
+        "agno_sessions": 0,
+        "agno_schema_versions": 3,
+        "agno_runs": 0,
+        "agno_memories": 0
+      },
+      "arquivo_temporario_removido": true
+    }
+  ],
+  "sucesso": true
+}

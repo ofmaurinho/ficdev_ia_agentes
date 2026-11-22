@@ -1,0 +1,10 @@
+{
+  "status": "historico_nao_valido_como_medicao_do_agente",
+  "motivo": "O fluxo anterior enviava resultado esperado ao modelo e retornava o resultado deterministico. Arquivos preservados para rastreabilidade, nao devem ser combinados com o benchmark corrigido.",
+  "arquivos": [
+    "benchmark_live.json",
+    "benchmark_live.csv",
+    "memoria.json",
+    "paralelismo.json"
+  ]
+}
