@@ -44,18 +44,21 @@
       }
     }
   ],
-  "resultado": "Limpeza verificada para os bancos SQLite tempor\u00e1rios do experimento; o arquivo de confer\u00eancias \u00e9 reposit\u00f3rio separado e permanece fora desse escopo.",
-  "status_global": "sqlite_verificado_conferencia_pendente_politica_institucional",
+  "resultado": "Temporary SQLite banks were verified and target records removed without residues. The conference JSONL is absent from the current workspace; see resultados/ACAO_HUMANA_PENDENTE.md.",
+  "status_global": "sqlite_temporary_verified; conference_jsonl_absent; backup_recovery_and_institutional_policy_pending",
   "conferencia_humana": {
     "arquivo": "resultados/conferencias.jsonl",
-    "existe": true,
+    "existe": false,
     "reposit\u00f3rio": "JSONL local separado do SQLite do agente",
-    "prazo_de_guarda": "pendente de decis\u00e3o institucional",
-    "procedimento_de_exclusao": "n\u00e3o definido nem executado; depende de pol\u00edtica institucional aprovada",
+    "prazo_de_guarda": "pending institutional decision",
+    "procedimento_de_exclusao": "not implemented; requires approved policy before real data",
     "inspecao_de_conteudo": "n\u00e3o realizada nesta checagem para evitar leitura e exposi\u00e7\u00e3o de registros pessoais; somente metadados do arquivo conferidos",
     "evidencia_de_escopo": "testes/test_memoria.py::test_eliminacao_sqlite_nao_altera_registro_jsonl_separado",
     "status": "pendente_de_politica_institucional",
     "registro_pendencia": "resultados/pendencia_politica_conferencias.md",
-    "uso_com_dados_reais": "bloqueado_ate_decisao_institucional"
+    "uso_com_dados_reais": "blocked until institutional policy is approved",
+    "status_no_workspace": "absent; responsible custodian must check backups and record recovery or non-recoverability",
+    "repositorio": "separate local JSONL, not stored in SQLite",
+    "acao_humana": "resultados/ACAO_HUMANA_PENDENTE.md"
   }
 }

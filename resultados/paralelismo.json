@@ -14,15 +14,15 @@
       "acuracia_modelo": 1.0,
       "recusas_ou_erros_modelo": 0,
       "categorias_recusa": {},
-      "tokens_entrada_mediana": 11906,
-      "tokens_saida_mediana": 508,
-      "tokens_totais_mediana": 12419,
-      "tokens_totais_maximo": 12672,
-      "custo_mediano_usd": 0.002992,
-      "custo_maximo_usd": 0.0030724000000000003,
-      "razao_maximo_mediana_custo": 1.026871657754011,
-      "latencia_mediana_s": 7.003552299996954,
-      "latencia_maxima_s": 10.640518500003964,
+      "tokens_entrada_mediana": 15088,
+      "tokens_saida_mediana": 490,
+      "tokens_totais_mediana": 15581,
+      "tokens_totais_maximo": 15833,
+      "custo_mediano_usd": 0.0036072,
+      "custo_maximo_usd": 0.0036836000000000004,
+      "razao_maximo_mediana_custo": 1.021179862497228,
+      "latencia_mediana_s": 6.686688500005403,
+      "latencia_maxima_s": 9.85464669999783,
       "chamadas_modelo_mediana": 5,
       "chamadas_modelo_maxima": 5,
       "distribuicao_chamadas_ferramenta_pedidas_pelo_modelo": {
@@ -41,17 +41,17 @@
       "acuracia_modelo": 1.0,
       "recusas_ou_erros_modelo": 0,
       "categorias_recusa": {},
-      "tokens_entrada_mediana": 9530,
-      "tokens_saida_mediana": 525,
-      "tokens_totais_mediana": 10055,
-      "tokens_totais_maximo": 10256,
-      "custo_mediano_usd": 0.0025351999999999996,
-      "custo_maximo_usd": 0.0026056,
-      "razao_maximo_mediana_custo": 1.0277690123067216,
-      "latencia_mediana_s": 5.959131800002069,
-      "latencia_maxima_s": 7.257488300005207,
+      "tokens_entrada_mediana": 12076,
+      "tokens_saida_mediana": 507,
+      "tokens_totais_mediana": 12585,
+      "tokens_totais_maximo": 15554,
+      "custo_mediano_usd": 0.0030266,
+      "custo_maximo_usd": 0.0035978000000000004,
+      "razao_maximo_mediana_custo": 1.188726623934448,
+      "latencia_mediana_s": 5.809614199999487,
+      "latencia_maxima_s": 7.0065168000000995,
       "chamadas_modelo_mediana": 4,
-      "chamadas_modelo_maxima": 4,
+      "chamadas_modelo_maxima": 5,
       "distribuicao_chamadas_ferramenta_pedidas_pelo_modelo": {
         "4": 36,
         "2": 3,
@@ -60,7 +60,7 @@
       "invocacoes_de_ferramenta_pelo_agente": 150
     }
   },
-  "comparacao": "Ambos os modos tiveram 39/39 saidas de modelo aceitas. Paralelismo ligado teve menos tokens, chamadas, custo e latencia nesta amostra; a diferenca e observacional e nao prova causalidade.",
+  "comparacao": "Ambos os modos tiveram 39/39 saidas de modelo aceitas e zero erros. Paralelismo ligado teve menores medianas de tokens, custo e latencia; diferenca observacional, sem inferencia causal.",
   "decisao_operacional": {
     "parallel_tool_calls": false,
     "motivo": "O modo ligado foi mais rapido e economico nesta amostra, com 39/39 acertos em ambos. O modo sequencial permanece padrao no app porque as dependencias de negocio exigem cadastro antes do historico/calculo e calculo antes do saldo; os dados nao demonstram efeito causal nem necessidade de alterar o padrao operacional."
@@ -69,5 +69,5 @@
     "entrada": 0.2,
     "saida": 1.2
   },
-  "nota": "custos estimados a partir de tokens medidos; nao sao valores de fatura. Cada pedido completo gerou quatro invocacoes de ferramenta pelo agente (cadastro, historico, calculo e saldo); tres pedidos incompletos por modo fizeram duas; bloqueios de identidade nao chamaram o modelo."
+  "nota": "Custos estimados a partir de tokens medidos, nao valores de fatura. Cada caso completo gerou quatro invocacoes de ferramenta pelo agente; identidade divergente foi bloqueada antes do modelo."
 }

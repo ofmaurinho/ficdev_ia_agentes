@@ -54,7 +54,7 @@ def main():
         st.text_area("Justificativa protocolada (dados pessoais mascarados)", display["justificativa"], disabled=True, height=100)
         if st.button("Analisar", type="primary"):
             st.session_state.pop("resultado", None)
-            st.session_state.pop("minuta_" + numero, None)
+            st.session_state.pop(f"minuta_principal_{numero}", None)
             try:
                 with st.status("Preparando a análise…", expanded=True) as status:
                     result = analisar_pedido(numero, usar_modelo=True, agent=_agente(db=recursos()),
@@ -69,13 +69,13 @@ def main():
                 st.session_state.pop("resultado", None)
                 st.error(PADRAO_ERRO)
         if st.session_state.get("resultado") and st.session_state.resultado.instrucao.numero_pedido == numero:
-            _mostrar(st.session_state.resultado)
+            _mostrar(st.session_state.resultado, contexto="principal")
     with tabs[1]:
         numero_c = st.selectbox("Pedido em diligência", ["DIA-2026-0111", "DIA-2026-0112"])
         comp = st.text_area("Complementação recebida")
         if st.button("Processar na mesma sessão"):
             st.session_state.pop("resultado_comp", None)
-            st.session_state.pop("minuta_" + numero_c, None)
+            st.session_state.pop(f"minuta_complementacao_{numero_c}", None)
             try:
                 with st.status("Preparando a diligência…", expanded=True) as status:
                     previous_model_session = numero_c in st.session_state.get("casos_com_sessao_de_modelo", [])
@@ -93,7 +93,7 @@ def main():
                 st.error(PADRAO_ERRO)
         if (st.session_state.get("resultado_comp") and
                 st.session_state.resultado_comp.instrucao.numero_pedido == numero_c):
-            _mostrar(st.session_state.resultado_comp)
+            _mostrar(st.session_state.resultado_comp, contexto="complementacao")
     with tabs[2]:
         caso = st.text_input("Identificador do pedido para eliminação")
         if st.button("Eliminar dados de trabalho", type="secondary"):
@@ -108,8 +108,9 @@ def main():
                 st.error(PADRAO_ERRO)
 
 
-def _mostrar(result):
+def _mostrar(result, contexto="principal"):
     obj = result.instrucao
+    widget_namespace = f"{contexto}_{obj.numero_pedido}"
     if result.origem_saida == "barreira_pre_modelo":
         st.info("A análise do agente não foi executada: a divergência de identidade foi barrada antes da chamada ao modelo. Esta diligência é uma proteção determinística.")
     st.subheader(f"Recomendação: {obj.recomendacao}")
@@ -133,17 +134,17 @@ def _mostrar(result):
     tool_evidence = result.ferramentas or (result.fatos["consultas"] if result.origem_saida == "barreira_pre_modelo" else [])
     st.json(sanitizar_ferramentas(tool_evidence))
     st.caption("A minuta editada será incluída no registro local de conferência após o envio.")
-    minuta = st.text_area("Minuta editável para conferência", obj.minuta_despacho, key="minuta_"+obj.numero_pedido)
+    minuta = st.text_area("Minuta editável para conferência", obj.minuta_despacho, key=f"minuta_{widget_namespace}")
     st.caption("Métricas reais disponíveis: " + json.dumps(result.metricas, ensure_ascii=False))
     st.markdown("#### Registro da conferência humana")
     choices = ["prosseguir_ao_ordenador", "devolver_em_diligencia", "nao_recomendar"]
-    encaminhamento = st.selectbox("Encaminhamento decidido pelo servidor", choices, key="dec_"+obj.numero_pedido)
+    encaminhamento = st.selectbox("Encaminhamento decidido pelo servidor", choices, key=f"dec_{widget_namespace}")
     corresponde = {"apto_para_autorizacao": "prosseguir_ao_ordenador",
                    "diligencia": "devolver_em_diligencia",
                    "nao_recomendado": "nao_recomendar"}[obj.recomendacao]
     diverge = encaminhamento != corresponde
-    justificativa = st.text_area("Justificativa obrigatória da divergência", key="just_"+obj.numero_pedido)
-    if st.button("Registrar conferência", key="reg_"+obj.numero_pedido):
+    justificativa = st.text_area("Justificativa obrigatória da divergência", key=f"just_{widget_namespace}")
+    if st.button("Registrar conferência", key=f"reg_{widget_namespace}"):
         if diverge and not justificativa.strip():
             st.error("Informe a justificativa para a divergência.")
         else:

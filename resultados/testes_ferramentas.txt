@@ -1,3 +1,0 @@
-Final suite: 40 tests passed, including AppTest, pre-model 0112 metrics, and separation of SQLite deletion from the conference JSONL.
-Offline benchmark: 42/42 matches.
-pip check: No broken requirements found.

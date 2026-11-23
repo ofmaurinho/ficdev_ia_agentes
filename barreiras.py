@@ -1,5 +1,6 @@
 """Guardrails de ordem, identidade, argumentos e ancoragem numérica."""
 from modelos import Instrucao
+import json
 import re
 import unicodedata
 
@@ -191,18 +192,30 @@ def _numeros(text):
     return sorted(values)
 
 
-def validar_chamadas_modelo(response, permitidas: list[dict], pedido: dict, fatos: dict) -> list[dict]:
+def validar_chamadas_modelo(response, permitidas: list[dict], pedido: dict, fatos: dict,
+                            execucoes_ferramentas: list[dict] | None = None) -> list[dict]:
     """Valida chamadas Agno pós-execução e devolve apenas campos sanitizados, nunca resultados brutos de ferramenta."""
     order = {"consultar_cadastro_servidor": 0, "consultar_historico_diarias": 1,
              "calcular_diarias": 1, "consultar_saldo_diarias": 2}
+    cached_keys = {
+        (item["nome"], json.dumps(item["argumentos"], sort_keys=True, ensure_ascii=False))
+        for item in (execucoes_ferramentas or []) if item.get("resultado") == "cache"
+    }
     highest = -1
     safe = []
+    seen = set()
     for call in (getattr(response, "tools", None) or []):
         name = getattr(call, "tool_name", None) or (call.get("tool_name") if isinstance(call, dict) else None)
         args = getattr(call, "tool_args", None) or (call.get("tool_args") if isinstance(call, dict) else None) or {}
         allowed = any(x["nome"] == name and x["argumentos"] == args for x in permitidas)
         if name not in order or not allowed:
             raise RecusaSeguranca("chamada de ferramenta fora da lista autorizada")
+        cache_key = (name, json.dumps(args, sort_keys=True, ensure_ascii=False))
+        if cache_key in seen:
+            if cache_key in cached_keys and not getattr(call, "tool_call_error", False):
+                continue
+            raise RecusaSeguranca("ferramenta repetida sem resultado em cache")
+        seen.add(cache_key)
         if order[name] < highest:
             raise RecusaSeguranca("ordem das ferramentas violou dependências")
         highest = max(highest, order[name])

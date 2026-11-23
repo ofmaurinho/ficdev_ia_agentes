@@ -99,6 +99,15 @@ def _pair_row(name, case, first, m1, second, m2, stage, first_error, second_erro
                       if stage == "complemento_com_identidade_corrigida" else
                       "recuperado" if m2.get("historico_sessao_recuperou_id_caso") else
                       "nao_recuperado")
+    observed_tools = []
+    response = getattr(second_error, "resposta_agente", None) if second_error else None
+    for call in (getattr(response, "tools", None) or []):
+        observed_tools.append({
+            "nome": getattr(call, "tool_name", None),
+            "erro": bool(getattr(call, "tool_call_error", False)),
+        })
+    rejected_tools = [item.get("nome") for item in getattr(second_error, "ferramentas", [])
+                      if item.get("resultado") in {"recusada", "falha"}] if second_error else []
     return {"caso": mascarar_identificador(case), "configuracao": name,
         "etapa_complementacao": stage,
         "primeiro_turno_status": first_status,
@@ -115,6 +124,8 @@ def _pair_row(name, case, first, m1, second, m2, stage, first_error, second_erro
         "complementacao_saida_validada": second_result,
         "complementacao_erro": type(second_error).__name__ if second_error else None,
         "complementacao_barreira": str(second_error) if isinstance(second_error, RecusaSeguranca) else None,
+        "complementacao_ferramentas_observadas": observed_tools,
+        "complementacao_ferramentas_recusadas": rejected_tools,
         "complementacao_tokens_entrada": m2.get("tokens_entrada"),
         "complementacao_tokens_saida": m2.get("tokens_saida"),
         "complementacao_chamadas_modelo": m2.get("chamadas_modelo"),

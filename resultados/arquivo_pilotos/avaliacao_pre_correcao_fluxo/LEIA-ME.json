@@ -1,8 +1,0 @@
-{
-  "status": "piloto_superado_nao_evidencia_final",
-  "motivo": "gerado antes do ajuste para consultas deterministicas pre-modelo e injecao de fatos retornados; nao misturar a metricas finais",
-  "arquivos": [
-    "benchmark_live.json",
-    "benchmark_live.csv"
-  ]
-}

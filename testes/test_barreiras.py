@@ -96,6 +96,51 @@ class BarreiraTest(unittest.TestCase):
         self.assertNotIn("resultado_esperado", fake.calls[0][2])
         self.assertIn("resumo_factual", fake.calls[0][2])
 
+    def test_prompt_complementacao_apenas_indica_pedido_da_sessao(self):
+        class FakeAgent:
+            def __init__(self): self.prompt = None
+            def run(self, prompt, user_id, session_id):
+                self.prompt = prompt
+                allowed = analisar_deterministico("DIA-2026-0111", "Retorno 2026-11-20")[1]["consultas"]
+                wrappers = {tool.__name__: tool for tool in agente_module._PROTECTED_TOOLS}
+                calls = []
+                for item in allowed:
+                    wrappers[item["nome"]](**item["argumentos"])
+                    calls.append(SimpleNamespace(tool_name=item["nome"], tool_args=item["argumentos"],
+                                                  tool_call_error=False))
+                expected = construir_instrucao(*analisar_deterministico("DIA-2026-0111", "Retorno 2026-11-20"))
+                return SimpleNamespace(status=agente_module.RunStatus.completed,
+                    content=expected, tools=calls, metrics={})
+
+        original_key = agente_module.OPENAI_API_KEY
+        fake = FakeAgent()
+        agente_module.OPENAI_API_KEY = "synthetic-test-key"
+        try:
+            result = analisar_pedido("DIA-2026-0111", "Retorno 2026-11-20", usar_modelo=True,
+                agent=fake, prompt_complementacao_apenas=True)
+        finally:
+            agente_module.OPENAI_API_KEY = original_key
+        payload = json.loads(fake.prompt.split("JSON):\n", 1)[1])
+        self.assertEqual(payload["numero_pedido"], "DIA-2026-0111")
+        self.assertEqual(payload["complementacao"], "Retorno 2026-11-20")
+        self.assertNotIn("pedido", payload)
+        self.assertEqual(result.instrucao.recomendacao, "apto_para_autorizacao")
+
+    def test_chamada_duplicada_so_e_aceita_quando_foi_atendida_do_cache(self):
+        pedido, fatos = analisar_deterministico("DIA-2026-0111", "Retorno 2026-11-20")
+        permitted = fatos["consultas"]
+        calls = [SimpleNamespace(tool_name=item["nome"], tool_args=item["argumentos"],
+                                 tool_call_error=False) for item in permitted]
+        calls.append(SimpleNamespace(tool_name=calls[2].tool_name, tool_args=calls[2].tool_args,
+                                     tool_call_error=False))
+        response = SimpleNamespace(tools=calls)
+        executions = [{**item, "resultado": "concluida"} for item in permitted]
+        executions.append({**permitted[2], "resultado": "cache"})
+        accepted = agente_module.validar_chamadas_modelo(response, permitted, pedido, fatos, executions)
+        self.assertEqual(len(accepted), len(permitted))
+        with self.assertRaises(RecusaSeguranca):
+            agente_module.validar_chamadas_modelo(response, permitted, pedido, fatos, executions[:-1])
+
     def test_resposta_valida_exibida_e_a_propria_proposta_do_modelo(self):
         class FakeAgent:
             def __init__(self, proposal, permitted): self.proposal, self.permitted = proposal, permitted

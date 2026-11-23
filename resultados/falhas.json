@@ -24,7 +24,7 @@
     "acertos_exatos": 78,
     "recusas_de_saida": 0,
     "bloqueios_legitimos_pre_modelo": 6,
-    "nota": "o benchmark final nao registrou recusas de sintese nem erros de execucao; os seis bloqueios foram identidade divergente no preflight. Falha HTTP real nao foi provocada."
+    "nota": "rodada final atualizada; sem argumento divergente ou erro de execucao"
   },
   "outras_falhas": [
     {
@@ -42,5 +42,10 @@
       "escopo": "caso do acervo e teste local; alerta preservado e regra de urgencia restrita",
       "evidencia": "testes/test_ferramentas.py::test_urgencia_e_injecao"
     }
-  ]
+  ],
+  "validacao_repeticao_cache": {
+    "falha": "chamada identica repetida de ferramenta",
+    "resultado": "aceita somente quando a execucao foi atendida pelo cache; argumentos identicos sem cache continuam recusados",
+    "evidencia": "testes/test_barreiras.py::test_chamada_duplicada_so_e_aceita_quando_foi_atendida_do_cache"
+  }
 }

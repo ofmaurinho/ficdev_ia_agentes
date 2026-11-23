@@ -1,1 +1,1 @@
-Streamlit AppTest: renderiza??o inicial e fluxo de erro aprovados; limpa resultado anterior; registra minuta editada com PII mascarada. Sem captura automatizada de navegador.
+﻿Streamlit app.py root endpoint returned HTTP 200 on 127.0.0.1:8765. Server stopped after smoke test. No browser capture or visual review.

@@ -8,41 +8,42 @@ O modelo não recebe gabarito. Identidade divergente bloqueia a chamada e a mem�
 
 ## Benchmark live final
 
-Em 22/11/2026 foram executadas três rodadas dos 12 pedidos e duas complementações, em cada modo de paralelismo: 84 execuções. Seis pedidos com divergência de identidade foram bloqueados antes do modelo (três por modo). Nos 78 casos restantes, todas as propostas passaram pelas barreiras e coincidiram integralmente com o gabarito (39/39 por modo). Não houve recusa de saída nem erro de execução no ciclo final.
+Em 22/11/2026 foram executadas tres rodadas dos 12 pedidos e duas complementacoes, em cada modo de paralelismo: 84 execucoes. Seis identidades divergentes foram bloqueadas antes do modelo. As outras 78 propostas passaram pelas barreiras e acertaram integralmente o gabarito (39/39 em cada modo), sem divergencias de argumentos ou erros de execucao.
 
-| Medida por execução do modelo | Paralelismo desligado | Paralelismo ligado |
+| Medida por execucao do modelo | Paralelismo desligado | Paralelismo ligado |
 |---|---:|---:|
-| Casos avaliados / acertos exatos | 39 / 39 (100%) | 39 / 39 (100%) |
-| Invocações reais de ferramenta pelo agente | 150 | 150 |
-| Invocações de ferramenta por caso completo | 4 | 4 |
-| Chamadas de modelo, mediana / máximo | 5 / 5 | 4 / 4 |
-| Tokens totais, mediana / máximo | 12.419 / 12.672 | 10.055 / 10.256 |
-| Custo estimado, mediana / máximo | US$ 0,002992 / US$ 0,0030724 | US$ 0,0025352 / US$ 0,0026056 |
-| Latência, mediana / máximo | 7,00 / 10,64 s | 5,96 / 7,26 s |
+| Casos avaliados / acertos exatos | 39 / 39 | 39 / 39 |
+| Invocacoes de ferramenta pelo agente | 150 (4 por caso completo) | 150 (4 por caso completo) |
+| Chamadas de modelo, mediana / maximo | 5 / 5 | 4 / 5 |
+| Tokens de entrada, mediana | 15.088 | 12.076 |
+| Tokens de saida, mediana | 490 | 507 |
+| Tokens totais, mediana / maximo | 15.581 / 15.833 | 12.585 / 15.554 |
+| Custo estimado, mediana / maximo | US$ 0,0036072 / US$ 0,0036836 | US$ 0,0030266 / US$ 0,0035978 |
+| Latencia, mediana / maximo | 6,69 / 9,85 s | 5,81 / 7,01 s |
 
-O modo ligado teve menor mediana de chamadas, tokens, custo e latência nesta amostra. Os dois modos tiveram a mesma acurácia; isso não prova que o paralelismo causou a diferença de custo ou tempo. O modo desligado permanece padrão porque as ferramentas têm dependências de negócio ordenadas. A distribuição por caso, argumentos sanitizados e métricas completas estão em `resultados/benchmark_live.json`; a comparação agregada está em `resultados/paralelismo.json`.
+O modo paralelo teve menores medianas de tokens, custo e latencia nesta amostra; ambos acertaram 39/39. Isso nao prova que o paralelismo causou a diferenca. O padrao operacional continua sequencial porque as consultas tem dependencias de negocio. A aplicacao aceita chamada identica repetida somente quando o wrapper confirma que o resultado veio do cache; chamadas repetidas sem cache continuam recusadas.
 
-Os custos usam os preços de referência do exercício: entrada US$ 0,20 e saída US$ 1,20 por milhão de tokens. O custo mediano sobre as 78 execuções foi US$ 0,002591 e o máximo US$ 0,0030724; os tokens totais tiveram mediana 10.204,5 e máximo 12.672. São estimativas, não valores de fatura. O fluxo completo invocou quatro ferramentas pelo agente em cada pedido elegível. Três casos incompletos por modo usaram duas; os bloqueios de identidade não chamaram o modelo.
+Os custos usam os precos de referencia do exercicio: entrada US$ 0,20 e saida US$ 1,20 por milhao de tokens; nao sao valores de fatura. Sobre as 78 propostas avaliadas, o custo mediano foi US$ 0,0030942 e o maximo US$ 0,0036836. A mediana de tokens totais foi 12.793,5, com maximo 15.833. Metricas por execucao e chamadas sanitizadas estao em resultados/benchmark_live.json e .csv; a comparacao agregada esta em resultados/paralelismo.json.
 
-## Memória e complementação
+## Memoria e complementacao
 
-O ensaio live final avaliou DIA-2026-0111 e DIA-2026-0112 em três configurações: sem memória, histórico de sessão limitado e histórico com memória de usuário. O segundo turno de 0111 enviou somente a complementação; assim, recuperação do contexto foi medida separadamente da qualidade da resposta. A sessão com histórico recuperou o identificador e aplicou a complementação. Memória de usuário não acrescentou recuperação em relação ao histórico limitado.
+O ensaio live avaliou os casos 0111 e 0112 em tres configuracoes. No 0111, somente a complementacao foi enviada no segundo turno para medir recuperacao; sem memoria, ela nao foi aplicada. Com historico limitado, o modelo recuperou o pedido e aplicou a complementacao. O modo com memoria de usuario tambem aplicou os dois casos, mas nao acrescentou recuperacao em relacao ao historico limitado e aumentou chamadas e custo.
 
-| Configuração | Recuperou 0111 pelo histórico | Complementações validadas | Chamadas de modelo | Tokens agregados | Custo observado agregado |
-|---|---:|---:|---:|---:|---:|
-| Sem memória | 0/1 | 1/2 | 13 | 30.333 | US$ 0,0074466 |
-| Histórico limitado | 1/1 | 2/2 | 16 | 34.914 | US$ 0,0084078 |
-| Histórico + memória do usuário | 1/1 | 2/2 | 19 | 38.982 | US$ 0,0091924 |
+| Configuracao | Complementacoes validadas | Chamadas de modelo | Tokens agregados | Custo observado agregado |
+|---|---:|---:|---:|---:|
+| Sem memoria | 1/2 | 9 | 25.879 | US$ 0,0064038 |
+| Historico limitado | 2/2 | 16 | 41.842 | US$ 0,0097234 |
+| Historico + memoria do usuario | 2/2 | 19 | 46.110 | US$ 0,0106180 |
 
-Em 0112, a matrícula inicialmente divergente bloqueia o primeiro envio ao modelo. O primeiro turno está marcado `bloqueado_antes_do_modelo`, com zero chamadas, tokens e custo de modelo; nenhuma execução ocorreu sob a matrícula divergente. O pedido corrigido e a complementação são enviados juntos sob a identidade confirmada; esse caso verifica correção segura, não recuperação de histórico. Para esse fluxo, a recuperação por histórico está marcada como não aplicável, com justificativa no JSON. As sessões/run-alvo foram apagadas nos bancos temporários, sem resíduos; os arquivos temporários foram removidos. Evidências por turno e contagens de limpeza estão em `resultados/memoria.json` e `resultados/eliminacao_memoria_live.json`.
+No 0112, o primeiro turno foi bloqueado antes do modelo; a correcao foi enviada junto ao pedido sob identidade confirmada e validada nas tres configuracoes. Esse caso avalia correcao segura, nao recuperacao de historico. Os bancos temporarios do experimento foram inspecionados e os registros de casos-alvo removidos sem residuos. A evidencia por turno e a limpeza estao em resultados/memoria.json e resultados/eliminacao_memoria_live.json.
 
-O registro humano em `resultados/conferencias.jsonl` é separado do SQLite e não é removido pela aba de eliminação. O prazo e o procedimento autorizado de exclusão ainda aguardam decisão institucional; por isso, a verificação de eliminação total do sistema permanece pendente para esse arquivo. O app exibe esse aviso e o uso com dados reais fica condicionado à definição da política.
+O arquivo `resultados/conferencias.jsonl` está presente. Auditoria somente de leitura em 22/11/2026 encontrou **14 linhas JSON válidas para 12 pedidos**, sem duplicatas integrais ou registros incompletos nos campos auditados. Os **14 registros estão completos e alinhados** entre recomendação e encaminhamento: 14 concordantes, zero divergentes; são 7 `apto_para_autorizacao` / `prosseguir_ao_ordenador`, 5 `nao_recomendado` / `nao_recomendar` e 2 `diligencia` / `devolver_em_diligencia`. Os pedidos 0111 e 0112 têm duas entradas cada, uma de diligência e outra de prosseguimento, e uma complementação correspondente para cada no acervo. O JSONL não identifica explicitamente etapa ou sessão, nem há snapshot anterior para comprovar continuidade histórica. No caso 0112, a matrícula corrigida na complementação corresponde ao acervo de servidores, mas a matrícula não consta do JSONL. A auditoria documental está concluída; a governança institucional de retenção, acesso, descarte e backups continua pendente antes do uso de dados reais. Detalhes estão em `resultados/pendencia_politica_conferencias.md` e `resultados/ACAO_HUMANA_PENDENTE.md`.
 
 ## Falhas provocadas, interface e testes
 
 Os testes de falha agora passam pelo `Agent.run` real do Agno, com modelo controlado localmente: solicitação repetida de ferramenta até o limite configurado e erro `ModelProviderError` no caminho do modelo. O primeiro confirmou que a execução de ferramentas é limitada; o segundo retornou status de erro e foi recusado sem propagar detalhe técnico pela exceção da aplicação. Isso não é uma falha HTTP provocada em endpoint externo. O benchmark live final não registrou recusa de síntese nem erro de execução; seis bloqueios de identidade eram esperados. Veja `resultados/falhas.json`.
 
-Os 40 testes passaram, incluindo AppTest da interface, barreiras, memória, bloqueio pré-modelo do caso 0112, isolamento do JSONL e integração controlada com o loop Agno. `pip check` não encontrou dependências quebradas. O benchmark offline obteve 42/42 correspondências. A interface foi verificada por AppTest, sem captura automatizada de navegador. O acervo é pequeno e controlado; a evidência não substitui avaliação institucional ou conferência humana.
+Na reexecução documentada, os 42 testes passaram, incluindo AppTest da interface, barreiras, memória, bloqueio pré-modelo do caso 0112, isolamento do JSONL e integração controlada com o loop Agno. `pip check` não encontrou dependências quebradas. O benchmark offline obteve 42/42 correspondências. Na revisão documental atual, os 44 testes da suíte passaram. A interface passou AppTest e o servidor Streamlit respondeu HTTP 200; não houve captura automatizada de navegador. O acervo é pequeno e controlado; a evidência não substitui aprovação institucional.
 
 ## Arquivos de evidência
 
@@ -51,7 +52,6 @@ Os 40 testes passaram, incluindo AppTest da interface, barreiras, memória, bloq
 - `resultados/memoria.json` e `resultados/eliminacao_memoria_live.json`: recuperação e limpeza.
 - `resultados/falhas.json`: testes controlados e distinção de falha externa não provocada.
 - `resultados/benchmark_offline.json`: referência determinística, sem chamada ao modelo.
-- `resultados/arquivo_pilotos/avaliacao_correcao_relatorio/`: piloto e ciclo de prompt anterior, preservados fora do resultado final.
 
 
 ## Recalibracao de tokens e situacao da conferencia
@@ -63,10 +63,10 @@ A politica do JSONL de conferencia continua pendente de decisao institucional. N
 
 ## Conferencia final dos criterios de entrega
 
-- Ponta a ponta: `resultados/benchmark_live.json` registra 84 execucoes (tres rodadas, dois modos), 78 saidas de modelo avaliadas e aceitas e seis bloqueios de identidade antes do modelo.
+- Ponta a ponta: `resultados/benchmark_live.json` registra 84 execucoes (tres rodadas, dois modos), 78 saidas de modelo avaliadas e aceitas, sem erros, e seis bloqueios de identidade antes do modelo.
 - Agente e ferramentas: argumentos, ordem, limites, PII e status concluido estao cobertos por `testes/test_barreiras.py`, `testes/test_ferramentas.py` e `testes/test_falhas.py`; as ferramentas documentam argumentos e retornos em docstrings.
-- Memoria: `resultados/memoria.json` documenta identificadores, turnos, tokens e custos; `resultados/eliminacao_memoria_live.json` verifica os bancos SQLite temporarios. A conferencia JSONL e repositorio distinto, permanece pendente e bloqueada para dados reais em `resultados/pendencia_politica_conferencias.md`.
+- Memoria: `resultados/memoria.json` documenta identificadores, turnos, tokens e custos; `resultados/eliminacao_memoria_live.json` verifica os bancos SQLite temporarios. A conferência JSONL é um repositório distinto; a auditoria dos registros atuais e as limitações de contexto e histórico estão descritas em `resultados/pendencia_politica_conferencias.md`. A política institucional ainda bloqueia o uso com dados reais.
 - Falhas: `resultados/falhas.json` e testes provam teto de ferramentas e erro controlado dentro do Agno; nao foi provocada falha HTTP externa real.
 - Interface: `app.py` apresenta progresso, minuta editavel, encaminhamento humano, justificativa obrigatoria para divergencia e mensagens padrao de erro; `testes/test_app.py` verifica renderizacao, erro e persistencia sanitizada.
 - Pacote e segredos: fontes, testes, acervo hipotetico, `.env.example`, resultados, `desenho.md`, `relatorio.md` e `LEIA-ME.md` estao presentes. `.gitignore` cobre `.env`, JSONL de conferencia, SQLite e sidecars; `.env.example` nao e ignorado.
-- Verificacao local desta revisao: 40 testes aprovados e `pip check` sem dependencias quebradas. `git status` ainda lista os arquivos do projeto como nao rastreados neste checkout, mas nao lista `.env`, JSONL, SQLite, sidecars, `.venv` ou caches.
+- Verificacao local daquela reexecucao: 42 testes aprovados e `pip check` sem dependencias quebradas. `git status` ainda lista os arquivos do projeto como nao rastreados naquele checkout, mas mantem `.env` local ignorado pelo Git; SQLite e caches de execucao nao fazem parte das evidencias finais. O JSONL contém evidências de conferência, com as limitações registradas nesta revisão.
